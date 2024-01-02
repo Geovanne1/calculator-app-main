@@ -98,7 +98,7 @@ section .lcd {
   }
 
   main .header {
-    gap: 9rem;
+    gap: 4rem;
   }
 
   .header h1 {
