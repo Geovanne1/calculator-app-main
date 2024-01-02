@@ -1,0 +1,138 @@
+main {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  right: 20%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main .header {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.themes {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-option label {
+  padding: 5px 0.5rem;
+}
+
+.themes input[type='radio'] {
+  display: none;
+}
+
+.ilustration {
+  display: flex;
+  padding: 2px 2px;
+  justify-content: flex-start;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.ilustration span {
+  container: '';
+  padding: 8px;
+  border-radius: 50%;
+}
+
+main .teclado {
+  border-radius: 5px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 55px);
+  grid-template-rows: repeat(5, 35px);
+  gap: 8px;
+  grid-template-areas: 
+  "seven eight nine del"
+  "four five six sum"
+  "one two three subtraction"
+  "point zero division multiplication"
+  "reset reset equal equal";
+}
+
+section .lcd {
+  display: flex;
+  align-items: flex-end;
+}
+
+.display {
+  height: 2rem;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: end;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.teclado button {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 748px) {
+  main {
+    bottom: 20%;
+  }
+
+  main .header {
+    gap: 9rem;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .themes p {
+    font-size: 1.5rem;
+  }
+
+  .ilustration {
+    padding: 3px 3px;
+  }
+  
+  .ilustration span {
+    padding: 10px;
+  }
+
+  .display {
+    height: 3.9rem;
+    font-size: 27px;
+    padding-right: 5px;
+  }
+
+  main .teclado {
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 15px;
+  }
+
+  .teclado button {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+  }
+}

@@ -1,0 +1,59 @@
+body {
+  background-color: var(--main-background);
+}
+
+main .header {
+  color: var(--white);
+}
+
+.ilustration {
+  background-color: var(--toggle-background);
+}
+
+.ilustration span {
+  background-color: var(--key-background);
+}
+
+.display {
+  background-color: var(--very-dark-desaturated);
+  color: var(--white);
+}
+
+.teclado {
+  background-color: var(--toggle-background);
+}
+
+button {
+  color: var(--desaturated-dark);
+  box-shadow: 0px 2px 3px var(--grayish-orange);
+}
+
+.del {
+  color: var(--white);
+  background-color: var(--dark-moderate-cyan);
+  box-shadow: 0px 2px 3px var(--very-dark-cyan);
+}
+
+.del:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.reset {
+  color: var(--white);
+  background-color: var(--dark-moderate-cyan);
+  box-shadow: 0px 2px 3px var(--very-dark-cyan);
+}
+
+.reset:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.equal {
+  color: var(--white);
+  background-color: var(--key-background);
+  box-shadow: 0px 2px 3px var(--dark-red);
+}
+
+.equal:hover {
+  background-color: var(--dark-red);
+}

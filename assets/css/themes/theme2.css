@@ -1,0 +1,64 @@
+body {
+  background-color: var(--light-grayish-orange);
+}
+
+main .header {
+  color: var(--light-black);
+}
+
+.ilustration {
+  background-color: var(--grayish-orange);
+}
+
+.ilustration span {
+  background-color: var(--orange);
+}
+
+.display {
+  background-color: var(--white);
+  color: var(--light-black);
+}
+
+.teclado {
+  background-color: var(--grayish-orange);
+}
+
+button {
+  color: var(--light-black);
+  background-color: var(--grayish-red);
+  box-shadow: 0px 2px 3px var(--grayish-orange);
+}
+
+button:hover {
+  background-color: var(--white);
+}
+
+.del {
+  color: var(--white);
+  background-color: var(--dark-moderate-cyan);
+  box-shadow: 0px 2px 3px var(--very-dark-cyan);
+}
+
+.del:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.reset {
+  color: var(--white);
+  background-color: var(--dark-moderate-cyan);
+  box-shadow: 0px 2px 3px var(--very-dark-cyan);
+}
+
+.reset:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+.equal {
+  color: var(--white);
+  background-color: var(--orange);
+  box-shadow: 0px 2px 3px var(--dark-orange);
+}
+
+.equal:hover {
+  background-color: var(--dark-red);
+}

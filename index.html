@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/globol.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/ordem.css">
+    <link class="style-themes" rel="stylesheet" href="./assets/css/themes/theme1.css">
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="header">
+        <h1>calc</h1>
+        <div class="themes">
+          <p>theme</p>
+          <div class="theme">
+            <div class="theme-option">
+              <label for="opcao1">
+                <input class="theme1" type="radio" id="opcao1" name="opcao" checked>
+                <span>1</span>
+              </label>
+              <label for="opcao2">
+                <input class="theme2" type="radio" id="opcao2" name="opcao">
+                <span>2</span>
+              </label>
+              <label for="opcao3">
+                <input class="theme3" type="radio" id="opcao3" name="opcao"
+                >
+                <span>3</span>
+              </label>
+            </div>
+            <div class="ilustration"><span></span></div>
+          </div>
+        </div>
+      </section>
+      <section class="lcd">
+        <input class="display" type="text" readonly>
+      </section>
+      <section class="teclado">
+        <button class="one" onclick="adicionarNumero('1')">1</button>
+        <button class="two" onclick="adicionarNumero('2')">2</button>
+        <button class="three" onclick="adicionarNumero('3')">3</button>
+        <button class="four" onclick="adicionarNumero('4')">4</button>
+        <button class="five" onclick="adicionarNumero('5')">5</button>
+        <button class="six" onclick="adicionarNumero('6')">6</button>
+        <button class="seven" onclick="adicionarNumero('7')">7</button>
+        <button class="eight" onclick="adicionarNumero('8')">8</button>
+        <button class="nine" onclick="adicionarNumero('9')">9</button>
+        <button class="zero" onclick="adicionarNumero('0')">0</button>
+        <button class="point" onclick="adicionarNumero('.')">.</button>
+
+        <button class="sum" onclick="adicionarOperador('+')">+</button>
+        <button class="subtraction" onclick="adicionarOperador('-')">-</button>
+        <button class="multiplication" onclick="adicionarOperador('*')">x</button>
+        <button class="division" onclick="adicionarOperador('/')">/</button>
+
+        <button class="reset" onclick="limparVisor()">RESET</button>
+        <button class="del" onclick="apagarUltimoCaractere()">DEL</button>
+        <button class="equal" onclick="calcularResultado()">=</button>
+      </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/theme.js"></script>
+  </body>
+
+</html>

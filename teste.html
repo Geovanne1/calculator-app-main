@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .style {
+      background-color: rgb(211, 174, 174);
+      display: flex;
+      padding: 3px;
+      justify-content: flex-start;
+      position: relative;
+      border-radius: 20px;
+    }
+    
+    .style span {
+      container: '';
+      background-color: brown;
+      padding: 5px;
+      border-radius: 50%;
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .inputs input[type="radio"] {
+      opacity: 0;
+      position: absolute;
+      top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="inputs">
+    <label for="opcao1">
+      <input class="theme1" type="radio" name="opcao" id="opcao1" checked>
+      <span>1</span>
+    </label>
+    <label for="opcao2">
+      <input class="theme2" type="radio" name="opcao" id="opcao2">
+      <span>2</span>
+    </label>
+    <label for="opcao3">
+      <input class="theme3" type="radio" name="opcao" id="opcao3">
+      <span>3</span>
+    </label> 
+  </div>
+  <div class="style">
+    <span></span>
+  </div>
+</body>
+  <script>
+    const span = document.querySelector('.style')
+    const label = document.querySelectorAll('label')
+    const theme1 = document.querySelector('.theme1')
+    const theme2 = document.querySelector('.theme2')
+    const theme3 = document.querySelector('.theme3')
+
+    for(let i = 0; i < label.length; i++) {
+      label[i].addEventListener('change', () => {
+        if (theme1.checked) {
+         span.style.justifyContent = 'flex-start'
+        } else if (theme2.checked) {
+          console.log('o tema 2 esta marcado')
+          span.style.justifyContent = 'center'
+        } else if (theme3.checked) {
+          console.log('o tema 3 esta marcado')
+          span.style.justifyContent = 'flex-end'
+        }
+      })
+    }
+
+  </script>
+</html>

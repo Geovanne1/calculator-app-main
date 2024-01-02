@@ -1,0 +1,71 @@
+.zero {
+grid-area: zero;
+}
+
+.one {
+grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.point {
+  grid-area: point;
+}
+
+.del {
+  grid-area: del;
+}
+
+.sum {
+  grid-area: sum;
+}
+
+.subtraction {
+  grid-area: subtraction;
+}
+
+.multiplication {
+  grid-area: multiplication;
+}
+
+.division {
+  grid-area: division;
+}
+
+.reset {
+  grid-area: reset;
+}
+
+.equal {
+  grid-area: equal;
+}
